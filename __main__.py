@@ -37,6 +37,7 @@ def main():
         title="Select Scholarship .XLS Document",
         filetypes=((".xls Files", "*.xls"), ("all files", "*.*")),
     )
+    root.quit()
     oldScholarshipsInfo = loadScholarshipsFromExcel(excelFileName)
     oldScholarships = oldScholarshipsInfo[0]
     cellValueIndex = oldScholarshipsInfo[1]
